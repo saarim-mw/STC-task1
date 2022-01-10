@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&family=Roboto:wght@500&display=swap');
+
+
+
+*{
+    text-align: center;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    margin: 0;
+}
+/* Navbar */
+.navigation {
+    background-color: rgb(39, 33, 33);
+    height: 10vh;
+    padding-top: 0.5rem;
+    border-radius: 0 0 0 50px;
+}
+ul.nav_elements{
+    list-style: none;
+    display: flex;
+}
+li.home{
+    margin-right: auto;
+    margin-left: 1.5rem;
+}
+li{
+    margin: 1rem;
+}
+/* ------------------------------------------- */
+
+/* Body */
+section{
+    margin-top: 5rem;
+}
+h1,h2{
+    color: black;
+}
+h1{
+    font-size: 2rem;
+}
+h2{
+    text-align: left;
+    max-width: 80vw;
+    margin: auto;
+    font-size: 2rem;
+}
+div.container{
+    max-width: 70vw;
+    margin: auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+.element{
+    max-width: 20vw;
+    background-color: rgb(39, 33, 33);
+    margin: 1rem;
+    border-radius: 20px;
+    box-shadow: 0 0.25px 10px black;
+}
+img{
+    max-width: 95%;
+    height: auto;
+    margin: 1rem 0.5rem 0;
+    border-radius: 10px;
+}
+h4{
+    font-weight: 300;
+    text-align: left;
+    padding: 0 1rem;
+    font-size: 1.5rem;
+}
+p{
+    padding: 0 1rem;
+    font-weight: 100;
+    text-align: left;
+    line-height: 1.25rem;
+    font-size: 1rem;
+    
+}
+
+/* ------------------------------------------- */
+
+/* For devices less than 768 px */
+@media screen and (max-width: 768px){
+    .navigation{
+        padding-top: rem;
+    }
+    ul{
+        margin-top: 0;
+        padding: 1rem;
+    }
+    li{
+        margin: 1rem 0.25rem 0;
+        font-size: 80%;
+    }
+    div.container{
+        flex-flow: column nowrap;
+        justify-content: flex-start;
+        max-width: 90%;
+    }
+    .element{
+        max-width: 90vw;
+        height: auto;
+    }
+    h4{
+        margin-bottom: 0;;
+    }
+    p{
+        font-weight: 100;
+        font-size: 1rem;
+        line-height: 1.0rem;
+    }
+    
+}

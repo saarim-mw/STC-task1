@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&family=Roboto:wght@500&display=swap');
+
+
+
+*{
+    text-align: center;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    margin: 0;
+}
+/* Navbar */
+.navigation {
+    background-color: rgb(39, 33, 33);
+    height: auto;
+    padding-top: 0.5rem;
+}
+ul.nav_elements{
+    list-style: none;
+    display: flex;
+}
+li.home{
+    margin-right: auto;
+    margin-left: 1.5rem;
+}
+li{
+    margin: 1rem;
+    font-size: 1.25rem;
+}
+/* ------------------------------------------- */
+
+/* Body */
+section{
+    margin-top: 5rem;
+}
+h1,h2{
+    color: black;
+}
+h1{
+    font-size: 2rem;
+}
+h2{
+    text-align: left;
+    max-width: 80vw;
+    margin: auto;
+    font-size: 2rem;
+}
+a {
+    text-decoration: none;
+}
+div.container{
+    max-width: 80vw;
+    margin: auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.element{
+    max-width: 30vw;
+    background-color: rgb(39, 33, 33);
+    margin: 1rem;
+    border-radius: 20px;
+    box-shadow: 0 0.25px 10px black;
+}
+img{
+    max-width: 90%;
+    height: auto;
+    margin: 2rem auto;
+    border-radius: 10px;
+}
+h4{
+    font-weight: 500;
+    text-align: left;
+    padding: 0 1rem;
+    font-size: 1.5rem;
+}
+p{
+    padding: 0 1rem;
+    font-weight: 100;
+    text-align: left;
+    line-height: 1.25rem;
+    font-size: 1rem;
+}
+
+/* ------------------------------------------- */
+
+/* For devices less than 768 px */
+@media screen and (max-width: 768px){
+    .navigation{
+        padding-top: rem;
+    }
+    ul{
+        margin-top: 0;
+        padding: 1rem;
+    }
+    li{
+        margin: 1rem 0.25rem 0;
+        font-size: 1.0rem;
+    }
+    div.container{
+        flex-flow: column nowrap;
+        justify-content: flex-start;
+        max-width: 90vw;
+    }
+    .element{
+        max-width: 90vw;
+        height: auto;
+    }
+    h4{
+        margin-bottom: 0;;
+    }
+    p{
+        font-weight: 100;
+        font-size: 1.25rem;
+        line-height: 1.5;
+    }
+    
+}
+
+@media screen and (min-width: 1500px){
+    p{
+        font-size: 2rem;
+        line-height: 1.5;
+    }
+    li{
+        font-size: 2rem;
+    }
+}
